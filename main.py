@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request, abort
+import AlipaySDK
 app = Flask(__name__)
 
 
 @app.route("/")
 def homeIndex():
+    AlipaySDK.AopClient().client
     value = request.args.get("sss")
     print(value)
     # abort(401)
