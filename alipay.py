@@ -14,3 +14,11 @@ from alipay.aop.api.request.AlipayTradePagePayRequest import AlipayTradePagePayR
 from alipay.aop.api.request.AlipayTradePayRequest import AlipayTradePayRequest
 from alipay.aop.api.response.AlipayOfflineMaterialImageUploadResponse import AlipayOfflineMaterialImageUploadResponse
 from alipay.aop.api.response.AlipayTradePayResponse import AlipayTradePayResponse
+
+alipay_client_config = AlipayClientConfig()
+alipay_client_config.server_url = 'https://openapi.alipay.com/gateway.do'
+alipay_client_config.app_id = '[your app_id]'
+alipay_client_config.app_private_key = '[your app private key]'
+alipay_client_config.alipay_public_key = '[alipay public key]'
+
+print(alipay_client_config)
