@@ -1,9 +1,9 @@
 from flask import Flask, request, abort,current_app
-import AlipaySDK
+import SDK.AlipaySDK
 
 @api.route("/")
 def homeIndex():
-    AlipaySDK.AopClient().client
+    SDK.AlipaySDK.AopClient().client
     value = request.args.get("sss")
     print(value)
     # abort(401)
