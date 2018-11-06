@@ -5,7 +5,7 @@
 class ConfigSite():
     DEBUG = True
     Alipay_APPID = "2018030102294725"
-   
+    
     SQL_Str="localhost:3306 mysql://root:@localhost:3306/mydatasite"
 
 
