@@ -1,0 +1,14 @@
+#创建项目
+django-admin startproject ****
+django-admin startapp ****
+
+#数据库命令
+python manage.py migrate
+python manage.py makemigrations app
+python manage.py migrate app
+
+#创建管理用户
+python manage.py createsuperuser
+
+
+python manage.py runserver
