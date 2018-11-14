@@ -37,9 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'webapi',
     'app'
 ]
+
+REST_FRAMEWORK  =  { 
+    #使用Django的标准`django.contrib.auth`权限，
+    #或允许未经身份验证的用户进行只读访问。
+    'DEFAULT_PERMISSION_CLASSES': [ 
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly' 
+    ] 
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
